@@ -75,7 +75,7 @@ function startLoop(query, limit) {
     if (loopActive) {
       findAndScroll(query);
     }
-  }, 5000);
+  }, Math.floor(Math.random() * (35001 - 15000)) + 15000;);
 
   sendMessageToPopup('Running');
 }
