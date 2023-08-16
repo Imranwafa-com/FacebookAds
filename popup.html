@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>FBbadShi</title>
+  <style>
+    button {
+      background-color: #5A5A5A;
+      color: red;
+      margin-top: 10px;
+    }
+    input {
+      background-color: #5A5A5A;
+      color: red;
+      margin-top: 10px;
+    }
+    #status {color: antiquewhite;}
+  </style>
+</head>
+<body style="background-color: #5A5A5A; color: red;">
+  <center>
+    <img src="images/icon128.png" />
+    <h1>FBbadShi</h1>
+    <h3>Status: <span id="status">Idle ( wait like 5 sec after start)</span></h3>
+    <input type="text" id="userInput" placeholder="enter the last month and current year (EX July 2023)">
+    <input type="number" id="loopLimit" placeholder="loop limit (0 = infinite)">
+    <button id="findScroll">Start Loop</button>
+    <button id="stopLoop">Stop Loop</button>
+    <button id="forceQuit">Force Quit</button>
+  </center>
+  <script src="popup.js"></script>
+</body>
+</html>
